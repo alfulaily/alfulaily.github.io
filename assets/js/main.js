@@ -79,10 +79,13 @@
             </li>
 
             <!-- 3. Blog -->
-            <li>
-              <a href="${p}blog/index.html" class="nav-link ${isBlog ? 'active' : ''}">
-                <span>Blog</span>
-              </a>
+            <li class="nav-item-dropdown">
+              <button type="button" class="nav-link ${isBlog ? 'active' : ''}" data-dropdown-toggle aria-expanded="false">
+                <span>Blog</span> <span class="caret-icon">▾</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="${p}blog/index.html" class="dropdown-item">⏳ Blogs — TBD</a></li>
+              </ul>
             </li>
 
             <!-- 4. Contact -->

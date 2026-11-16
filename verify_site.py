@@ -77,12 +77,18 @@ def main() -> int:
     else:
         errors.append("Missing CV PDF at cv_alfu_laily_PhD/cv_laily_20261115.pdf")
 
-    # 4. Check Courses TBD placeholder portal (course modules archived cleanly for staged release)
+    # 4. Check Courses & Blogs TBD placeholder portals (staged release mode)
     courses_tbd = SITE_ROOT / "0-health-informatics" / "index.html"
     if courses_tbd.is_file() and "TBD" in courses_tbd.read_text(encoding="utf-8", errors="ignore"):
         print("[PASS] Courses portal placeholder verified in 0-health-informatics/index.html (TBD release mode).")
     else:
         errors.append("Missing or invalid Courses TBD placeholder at 0-health-informatics/index.html.")
+
+    blogs_tbd = SITE_ROOT / "blog" / "index.html"
+    if blogs_tbd.is_file() and "TBD" in blogs_tbd.read_text(encoding="utf-8", errors="ignore"):
+        print("[PASS] Blogs portal placeholder verified in blog/index.html (TBD release mode).")
+    else:
+        errors.append("Missing or invalid Blogs TBD placeholder at blog/index.html.")
 
     # 5. Check for forbidden Course numbering in active online HTML files
     course_num_pattern = re.compile(r'(?i)\bcourse\s*#?[1-9]\b')
