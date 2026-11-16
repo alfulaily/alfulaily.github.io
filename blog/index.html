@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog &amp; Academic Perspectives | Dr. Alfu Laily, PhD</title>
+  <meta name="description" content="Methodological essays, algorithmic fairness tutorials, clinical NLP research notes, and preventive digital health reflections by Dr. Alfu Laily, PhD.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true}]});"></script>
+</head>
+<body>
+
+  <!-- Persistent Header (Dynamic via main.js) -->
+  <header class="site-header"></header>
+
+  <main>
+    <!-- Hero & Blog Header -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> <span>/</span> <span>Blog</span>
+        </div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.6rem;">
+          <span class="badge badge-primary">Scholarly Perspectives &amp; Research Notes</span>
+          <span class="badge badge-rose">Health Equity &amp; Algorithmic Governance</span>
+        </div>
+        <h1 class="hero-title">Preventive Health Informatics &amp; Behavioral AI Blog</h1>
+        <p class="hero-subtitle">
+          Scholarly essays, computational tutorials, and methodological perspectives on <strong>clinical algorithmic fairness</strong>, <strong>informative missingness in EHR data</strong>, <strong>large language models in health communication</strong>, and <strong>infection-related cancer prevention</strong> by Dr. Alfu Laily, PhD.
+        </p>
+
+        <div class="formula-showcase" style="margin-bottom: 1.5rem;">
+          $$\text{Equal Opportunity Difference: } |P(\hat{Y}=1 \mid Y=1, A=0) - P(\hat{Y}=1 \mid Y=1, A=1)| \le \epsilon$$
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="badge badge-rose">Recent Dispatches</span>
+            <h2 class="section-title">Essays, Methodology &amp; Computational Notes</h2>
+            <p class="section-desc">Practical insights bridging biostatistics, medical informatics architectures, and community-centered health equity.</p>
+          </div>
+        </div>
+
+        <div class="grid-2" style="gap: 2rem;">
+          <!-- Article 1: Algorithmic Fairness -->
+          <article class="card" style="border-top: 4px solid var(--accent-primary); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+                <span class="badge badge-active">Clinical AI &amp; Fairness</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">October 2026 • 8 min read</span>
+              </div>
+              <h3 class="card-title" style="font-size: 1.3rem; margin-bottom: 0.75rem;">
+                Auditing the 88.7% Accuracy Paradox: Why Unweighted Classifiers Fail Diabetic Inpatients Under CMS HRRP Penalties
+              </h3>
+              <p class="card-text">
+                When training predictive risk stratification models on hospital cohorts, an unweighted classifier can report a deceptive 88.7% overall accuracy simply by predicting that no patient will ever be readmitted. In real-world hospital operations governed by the CMS Hospital Readmissions Reduction Program (HRRP), false negatives carry catastrophic clinical and financial consequences. Here is how cost-sensitive thresholding and <code>fairlearn.metrics.MetricFrame</code> mitigate disparate recall across Medicaid and racial subgroups.
+              </p>
+              <div class="formula-showcase" style="font-size: 0.82rem; margin-bottom: 1rem;">
+                $$\text{Accuracy} \approx 88.7\% \implies \text{Recall} \approx 0\% \quad (\text{HRRP Penalty Threshold: } \text{ScalePosWeight} = \frac{N_{\text{neg}}}{N_{\text{pos}}})$$
+              </div>
+            </div>
+            <div class="card-footer" style="border-top: 1px solid var(--border-color); padding-top: 0.85rem;">
+              <a href="../0-health-informatics/index.html" class="btn btn-secondary btn-sm">Course Walkthrough: TBD</a>
+              <span style="font-size: 0.78rem; color: var(--text-muted); float: right; margin-top: 0.4rem;">Author: Dr. Alfu Laily, PhD</span>
+            </div>
+          </article>
+
+          <!-- Article 2: Informative Missingness -->
+          <article class="card" style="border-top: 4px solid var(--accent-rose); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+                <span class="badge badge-rose">EHR Data Provenance</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">September 2026 • 6 min read</span>
+              </div>
+              <h3 class="card-title" style="font-size: 1.3rem; margin-bottom: 0.75rem;">
+                Closing the Care-Process Gap: Why Unmeasured Lab Tests Are Informative Absence Signals in Longitudinal EHRs
+              </h3>
+              <p class="card-text">
+                Generic computer science textbooks recommend dropping missing values or applying multivariate imputation (MICE) to fill missing fields. In clinical electronic health records, however, laboratory tests are never Missing Completely at Random (MCAR). When an inpatient record shows <code>A1Cresult == 'None'</code>, that missingness is an informative care-process signal reflecting clinical decision-making. Imputing values destroys vital information about diagnostic adherence.
+              </p>
+              <div class="formula-showcase" style="font-size: 0.82rem; margin-bottom: 1rem;">
+                $$\text{Informative Absence: } P(R_{\text{HbA1c}} = 1 \mid \text{Comorbidity}, \text{Physician Order}) \ne P(R_{\text{HbA1c}} = 1)$$
+              </div>
+            </div>
+            <div class="card-footer" style="border-top: 1px solid var(--border-color); padding-top: 0.85rem;">
+              <a href="../0-health-informatics/index.html" class="btn btn-secondary btn-sm">Course Walkthrough: TBD</a>
+              <span style="font-size: 0.78rem; color: var(--text-muted); float: right; margin-top: 0.4rem;">Author: Dr. Alfu Laily, PhD</span>
+            </div>
+          </article>
+
+          <!-- Article 3: Cancer Prevention & LLMs -->
+          <article class="card" style="border-top: 4px solid var(--accent-gold); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+                <span class="badge badge-gold">Cancer Prevention &amp; LLMs</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">August 2026 • 10 min read</span>
+              </div>
+              <h3 class="card-title" style="font-size: 1.3rem; margin-bottom: 0.75rem;">
+                Evaluating Large Language Models in HPV Vaccine Communication and Infection-Related Cancer Prevention
+              </h3>
+              <p class="card-text">
+                Can generative language models provide accurate, culturally concordant guidance to address vaccine hesitancy and increase HPV vaccination uptake in rural communities? This essay reviews our recent empirical evaluations assessing readability, clinical factual accuracy, and empathy across frontier and open-weight models, framing actionable guardrails for clinical health communicators.
+              </p>
+              <div class="formula-showcase" style="font-size: 0.82rem; margin-bottom: 1rem;">
+                $$\text{Flesch-Kincaid Grade Level: } 0.39 \left(\frac{\text{total words}}{\text{total sentences}}\right) + 11.8 \left(\frac{\text{total syllables}}{\text{total words}}\right) - 15.59$$
+              </div>
+            </div>
+            <div class="card-footer" style="border-top: 1px solid var(--border-color); padding-top: 0.85rem;">
+              <a href="../index.html#peer-reviewed" class="btn btn-primary btn-sm">View Related Publications →</a>
+              <span style="font-size: 0.78rem; color: var(--text-muted); float: right; margin-top: 0.4rem;">Author: Dr. Alfu Laily, PhD</span>
+            </div>
+          </article>
+
+          <!-- Article 4: Interoperability & FHIR -->
+          <article class="card" style="border-top: 4px solid var(--accent-purple); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+                <span class="badge badge-purple">Enterprise Standards</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">July 2026 • 7 min read</span>
+              </div>
+              <h3 class="card-title" style="font-size: 1.3rem; margin-bottom: 0.75rem;">
+                From Pipe-Delimited HL7 v2 to HL7 FHIR R4: Navigating Enterprise Semantic Interoperability in Hospital Systems
+              </h3>
+              <p class="card-text">
+                For over three decades, legacy hospital interface engines communicated via pipe-delimited HL7 v2 segments (<code>MSH</code>, <code>PID</code>, <code>PV1</code>, <code>OBX</code>). Transitioning to RESTful, graph-linked HL7 FHIR R4 resources mandates rigorous validation of referential UUID integrity, code system binding (SNOMED, LOINC, RxNorm), and ONC USCDI v3/v4 compliance.
+              </p>
+              <div class="formula-showcase" style="font-size: 0.82rem; margin-bottom: 1rem;">
+                $$\text{Transformation Pipeline: } \text{HL7 v2 Message} \xrightarrow{\text{Parse \& Normalize}} \text{OMOP CDM / FHIR R4 Transaction Bundle}$$
+              </div>
+            </div>
+            <div class="card-footer" style="border-top: 1px solid var(--border-color); padding-top: 0.85rem;">
+              <a href="../0-health-informatics/index.html" class="btn btn-secondary btn-sm">Course Walkthrough: TBD</a>
+              <span style="font-size: 0.78rem; color: var(--text-muted); float: right; margin-top: 0.4rem;">Author: Dr. Alfu Laily, PhD</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Author & Research Highlights Callout -->
+    <section class="section" style="background: var(--bg-subtle);">
+      <div class="container">
+        <div class="card" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+          <img src="../assets/images/Alfu-Laily-headshot.jpg" alt="Dr. Alfu Laily, PhD" class="profile-avatar" style="margin: 0; width: 120px; height: 120px;">
+          <div style="flex: 1; min-width: 280px;">
+            <span class="badge badge-primary" style="margin-bottom: 0.4rem;">About the Author</span>
+            <h3 style="font-size: 1.35rem; font-family: var(--font-display); margin-bottom: 0.4rem;">Dr. Alfu Laily, PhD</h3>
+            <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.8rem;">
+              Postdoctoral Researcher specializing in Health Informatics and Preventive Health at the Purdue University School of Nursing. Dr. Laily specializes in digital cancer prevention interventions, mobile health (mHealth) self-management, health communication equity, and machine learning fairness auditing.
+            </p>
+            <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+              <a href="../index.html" class="btn btn-primary btn-sm">View Academic Profile &amp; CV →</a>
+              <a href="../0-health-informatics/index.html" class="btn btn-secondary btn-sm">Courses (TBD)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2026 Dr. Alfu Laily, PhD • Postdoc | Health Informatics | Preventive Health</span>
+        <div style="display: flex; gap: 1rem;">
+          <a href="../index.html">Home-CV</a>
+          <a href="../0-health-informatics/index.html">Courses (TBD)</a>
+          <a href="./index.html">Blog</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

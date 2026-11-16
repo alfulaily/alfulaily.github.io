@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" width="280" height="280" role="img" aria-label="Portrait monogram for Alfu Laily, PhD">
+  <defs>
+    <linearGradient id="maroonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#881337" />
+      <stop offset="50%" stop-color="#6b102d" />
+      <stop offset="100%" stop-color="#4c0519" />
+    </linearGradient>
+    <linearGradient id="roseRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fda4af" />
+      <stop offset="50%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#be123c" />
+    </linearGradient>
+    <radialGradient id="softGlow" cx="75%" cy="22%" r="60%">
+      <stop offset="0%" stop-color="rgba(253, 164, 175, 0.35)" />
+      <stop offset="100%" stop-color="rgba(253, 164, 175, 0)" />
+    </radialGradient>
+  </defs>
+
+  <!-- Outer Circle Background -->
+  <circle cx="140" cy="140" r="136" fill="url(#maroonGrad)" />
+  <circle cx="140" cy="140" r="136" fill="url(#softGlow)" />
+
+  <!-- Subtle Botanical / Floral Corner Accents -->
+  <g fill="none" stroke="rgba(253, 164, 175, 0.28)" stroke-width="1.5">
+    <circle cx="140" cy="140" r="122" stroke-dasharray="4 6" />
+    <circle cx="140" cy="140" r="112" />
+    <path d="M140 20 C150 38, 130 38, 140 20 Z" fill="rgba(253, 164, 175, 0.35)" />
+    <path d="M140 260 C150 242, 130 242, 140 260 Z" fill="rgba(253, 164, 175, 0.35)" />
+    <path d="M20 140 C38 150, 38 130, 20 140 Z" fill="rgba(253, 164, 175, 0.35)" />
+    <path d="M260 140 C242 150, 242 130, 260 140 Z" fill="rgba(253, 164, 175, 0.35)" />
+  </g>
+
+  <!-- Stylized Health & Equity Heart-Pulse / Botanical Crest at Top -->
+  <path d="M115 68 C115 58, 128 54, 140 65 C152 54, 165 58, 165 68 C165 80, 140 92, 140 92 C140 92, 115 80, 115 68 Z"
+        fill="rgba(253, 164, 175, 0.22)" stroke="#fda4af" stroke-width="1.8" />
+  <polyline points="123,72 132,72 136,64 142,80 146,70 157,70"
+            fill="none" stroke="#fff1f2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Monogram Initials -->
+  <text x="140" y="162" text-anchor="middle" fill="#fff1f2"
+        font-family="Georgia, 'Playfair Display', 'Outfit', serif"
+        font-size="68" font-weight="700" letter-spacing="2">AL</text>
+
+  <!-- PhD Ribbon Subtitle -->
+  <rect x="76" y="182" width="128" height="28" rx="14" fill="rgba(255, 241, 242, 0.14)" stroke="url(#roseRing)" stroke-width="1.2" />
+  <text x="140" y="201" text-anchor="middle" fill="#ffe4e6"
+        font-family="'Outfit', 'Inter', sans-serif"
+        font-size="13" font-weight="700" letter-spacing="2.5">B.NUTR • PHD</text>
+</svg>

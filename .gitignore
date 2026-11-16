@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+_courses_archive/
+Course_*/
+build_interactive_books.py
+python_curriculum_prompts_and_lab_codebook.md
+LLM_HANDOFF_AND_PROGRESS_STATE.md
