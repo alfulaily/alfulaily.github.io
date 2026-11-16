@@ -52,7 +52,7 @@
               </button>
               <ul class="dropdown-menu">
                 <li><a href="${p}index.html" class="dropdown-item">🏠 Academic Profile &amp; Bio</a></li>
-                <li><a href="${p}index.html#research-highlights" class="dropdown-item">🔬 Research Highlights &amp; Innovations</a></li>
+                <li><a href="${p}index.html#peer-reviewed" class="dropdown-item">📚 Peer-Reviewed Journal Articles</a></li>
                 <li class="dropdown-divider"></li>
                 <li class="dropdown-submenu">
                   <button type="button" class="dropdown-sub-trigger" data-submenu-toggle aria-expanded="false">
