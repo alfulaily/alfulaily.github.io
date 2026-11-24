@@ -36,7 +36,7 @@
     return `
       <div class="container nav-container">
         <a href="${p}index.html" class="brand-logo">
-          <img src="${p}assets/images/Alfu-Laily-headshot.jpg" alt="Dr. Alfu Laily, PhD" class="brand-avatar-img">
+          <img src="${p}assets/images/Alfu-Laily-headshot.webp" alt="Dr. Alfu Laily, PhD" class="brand-avatar-img" width="42" height="42">
           <span>
             Alfu Laily, PhD
             <span class="brand-sub">Public Health Scientist | Postdoctoral Researcher</span>

@@ -64,11 +64,11 @@ def main() -> int:
         errors.append("Missing .nojekyll at root (numbered folders like 0-health-informatics will 404 on GitHub Pages).")
 
     # 2. Check Headshot Asset
-    headshot = SITE_ROOT / "assets" / "images" / "Alfu-Laily-headshot.jpg"
+    headshot = SITE_ROOT / "assets" / "images" / "Alfu-Laily-headshot.webp"
     if headshot.is_file():
         print(f"[PASS] Headshot portrait verified ({headshot.stat().st_size / 1024:.1f} KB).")
     else:
-        errors.append("Missing headshot image at assets/images/Alfu-Laily-headshot.jpg")
+        errors.append("Missing headshot image at assets/images/Alfu-Laily-headshot.webp")
 
     # 3. Check CV PDF
     cv_pdf = SITE_ROOT / "cv_alfu_laily_PhD" / "cv_laily_20261115.pdf"
